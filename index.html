@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickQuiz</title>
+    <link rel="icon" type="image/x-icon" href="./images/brain.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<!-- Updated body section -->
+<body>
+
+    <div class="quiz-container">
+        <h1>"QuickQuiz"<img src="./brain.png" alt=""></h1>
+        <div id="question-container" class="question-container"></div>
+        <div id="answer-buttons" class="option-container"></div>
+
+        <div class="btn-container">
+            <button class="next-btn btn" id="next-btn" onclick="nextQuestion()">Next <i class="fa-solid fa-forward-step"></i></button>
+            <button class="skip-btn btn" id="skip-btn" onclick="nextQuestion()">Skip <i class="fa-solid fa-forward"></i></button>
+        </div>
+
+        <div id="score-container" class="score-container">Score: <span id="score"></span></div>
+        <div id="question-number-container" class="question-number-container"><span id="current-question"></span> / <span id="total-question"></span></div>
+        <div class="theme-icon-container" id="theme-icon-container" title="Dark Mode"><i class="fa-solid fa-cloud-moon"></i></div>
+        <div class="reset-icon-container" id="reset-icon-container" title="Reset" onclick="resetQuiz()"><i class="fa-solid fa-power-off"></i></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
